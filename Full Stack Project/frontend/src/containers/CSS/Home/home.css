@@ -1,0 +1,100 @@
+.homeCont {
+    height: 95vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 0.3fr 0.5fr 1.5fr 1.5fr;
+    grid-template-areas: "homeHead homeHead homeHead homeHead homeHead homeHead"
+        "homeSub homeSub homeSub homeSub homeSub homeSub"
+        "homeBtns homeBtns homeBtns homeBtns homeBtns homeBtns"
+        "homeComp1 homeComp1 homePic homePic homeComp3 homeComp3"
+        "homeComp2 homeComp2 homePic homePic homeComp4 homeComp4";
+}
+
+@font-face {
+    font-family: customFont1;
+    src: url('../../DashboardComp/CSS-Fonts/Font1/ProtestStrike-Regular.ttf');
+}
+
+.homeHead {
+    grid-area: homeHead;
+}
+
+.homeSub {
+    grid-area: homeSub;
+}
+
+.homeBtns {
+    grid-area: homeBtns;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homePic {
+    grid-area: homePic;
+}
+
+.homeComp1 {
+    grid-area: homeComp1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeComp2 {
+    grid-area: homeComp2;
+    display: flex;
+    align-items: center;
+    margin-left: -15%;
+}
+
+.homeComp3 {
+    grid-area: homeComp3;
+    display: flex;
+    align-items: center;
+    margin-left: -25%;
+}
+
+.homeComp4 {
+    grid-area: homeComp4;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.homeHeadComp {
+    font-family: customFont1;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 45px;
+}
+
+.homeSubComp {
+    font-family: customFont1;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-align: center;
+    color: rgb(121, 121, 121);
+}
+
+.btn1,
+.btn2 {
+    background-color: black;
+    width: 120px;
+    height: 40px;
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.btn1:hover, .btn2:hover{
+    text-decoration: none;
+    color: white;
+}

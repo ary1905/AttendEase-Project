@@ -1,0 +1,100 @@
+.resetPasswordConfirmPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: customFont1;
+    src: url('../../DashboardComp/CSS-Fonts/Font1/ProtestStrike-Regular.ttf');
+}
+
+.resetPasswordConfirmContainer {
+    margin-top: 2%;
+    width: 50%;
+    display: grid;
+    grid-template-areas:
+        "resetPasswordConfirmContent";
+    height: 70vh;
+    border-radius: 12px;
+}
+
+.resetPasswordConfirmContent {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 0.3fr 1fr;
+    grid-template-areas:
+        "resetPasswordConfirmHead"
+        "resetPasswordConfirmIp";
+    backdrop-filter: blur(20px) saturate(200%);
+    border-radius: 12px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.resetPasswordConfirmHead {
+    display: grid;
+    justify-content: center;
+    align-items: end;
+}
+
+.resetPasswordConfirmHeadTxt1 {
+    font-family: customFont1;
+    letter-spacing: 3px;
+    font-size: 45px;
+    color: #2c2c2c;
+}
+
+.resetPasswordConfirmHeadTxt2 {
+    font-family: customFont1;
+    letter-spacing: 3px;
+    color: rgb(82, 82, 82);
+}
+
+.resetPasswordConfirmIp1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.resetPasswordConfirmPassword::placeholder{
+    color: rgb(0, 0, 0);
+    font-family: customFont1;
+}
+
+.resetPasswordConfirmPassword {
+    width: 70%;
+    height: 50px;
+    border: solid 2px #f75c2374;
+    border-radius: 10px;
+    background: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-family: customFont1;
+    margin-top: 10%;
+}
+
+.resetPasswordConfirmBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resetPasswordConfirmBtn1 {
+    width: 30%;
+    height: 45px;
+    border: solid 2px #f75c2374;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: customFont1;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.resetPasswordConfirmBtn1:hover {
+    text-decoration: none;
+    color: #f68f28;
+}

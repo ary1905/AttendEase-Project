@@ -1,0 +1,20 @@
+.navbar-brand{
+    background-image: url('../Images//LightLogo2.png');
+    width: 180px;
+    height: 55px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.nav-link{
+    font-family: customFont1;
+    font-weight: 500;
+    font-size: large;
+    letter-spacing: 3px;
+    margin-left: 20px;
+}
+
+@font-face {
+    font-family: customFont1;
+    src: url('../../containers/DashboardComp/CSS-Fonts/Font1/ProtestStrike-Regular.ttf');
+}

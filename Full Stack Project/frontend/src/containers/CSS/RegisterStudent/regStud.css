@@ -1,0 +1,99 @@
+.regStudPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: customFont1;
+    src: url('../../DashboardComp/CSS-Fonts/Font1/ProtestStrike-Regular.ttf');
+}
+
+.regStudContainer {
+    width: 60%;
+    height: 90vh;
+    border-radius: 12px;
+}
+
+.regStudContent {
+    justify-self: center;
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template-rows: 0.5fr 2.5fr;
+    grid-template-areas:
+        "regStudHead"
+        "regStudIp"
+    ;
+    backdrop-filter: blur(20px) saturate(200%);
+    border-radius: 12px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.regStudHead {
+    display: grid;
+    justify-content: center;
+    align-items: end;
+    margin-top: 5%;
+}
+
+.regStudHeadTxt1 {
+    font-family: customFont1;
+    letter-spacing: 3px;
+    font-size: 45px;
+    color: #2c2c2c;
+}
+
+.regStudIp{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "regStudIp1 regStudIp2" "regStudIp3 regStudIp4" "regStudIp5 regStudIp6" "regStudBtn regStudBtn";
+}
+
+.regStudIp1, .regStudIp2, .regStudIp3, .regStudIp4, .regStudIp5, .regStudIp6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.regStudName::placeholder, .regStudEmail::placeholder, .regStudPass::placeholder, .regStudRePass::placeholder, .regStudPhNum::placeholder{
+    color: rgb(0, 0, 0);
+    font-family: customFont1;
+}
+
+.regStudName, .regStudEmail, .regStudPass, .regStudRePass, .regStudPhNum{
+    width: 70%;
+    height: 50px;
+    border: solid 2px #f75c2374;
+    border-radius: 10px;
+    background: none;
+    padding: 1rem;
+    font-size: 0.9rem;
+    font-family: customFont1;
+}
+
+.regStudBtnCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.regStudBtn1 {
+    width: 20%;
+    height: 35px;
+    border: solid 2px #f75c2374;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-family: customFont1;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+.regStudBtn1:hover {
+    text-decoration: none;
+    color: #f68f28;
+}

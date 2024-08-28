@@ -1,0 +1,144 @@
+@font-face {
+    font-family: customFont1;
+    src: url('../CSS-Fonts/Font1/ProtestStrike-Regular.ttf');
+}
+
+.con2 {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "con2Subject con2UpdateAttendace";
+    column-gap: 10px;
+
+}
+
+.con2Subject,
+.con2UpdateAttendace,
+.con2Subject1 {
+    background-color: white;
+    border-radius: 15px;
+    height: 100%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.con2Subject {
+    background-image: url('../../Images/subBack.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.con2SubjectHead,
+.con2UpdAttendanceHead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: customFont1;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
+
+.con2UpdateAttendace {
+    background-image: url('../../Images/Untitled\ design.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-position: -50px;
+}
+
+.con2SubjectButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.con2SubjectIp {
+    display: grid;
+    grid-template-columns: 2fr 0.5fr;
+    grid-template-areas: "subjectSelect con2SubjectBtn2";
+
+}
+
+.subjectSelect {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: customFont1;
+    outline: solid 2px #f75c2374;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+
+.con2SubjectBtn2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.subjectBtn1 {
+    width: 45px;
+    height: 45px;
+    border: solid 2px #f75c2374;
+    font-size: 30px;
+    font-weight: 100;
+    font-family: customFont1;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+}
+
+.subjectBtn1:hover {
+    text-decoration: none;
+    color: #f68f28;
+}
+
+.con2SubjectInner {
+    display: grid;
+    grid-template-rows: 0.2fr 0.4fr 0.5fr;
+    grid-template-areas: "con2SubjectHead" "con2SubjectList" "con2SubjectButton";
+    height: 100%;
+}
+
+.con2SubjectList {
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-family: customFont1;
+    text-align: center;
+    font-size: larger;
+}
+
+.con2UpdAttendanceButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.UpdAttendanceBtn1 {
+    width: 100px;
+    height: 45px;
+    border: solid 2px #f75c2374;
+    font-size: 25px;
+    font-weight: 100;
+    font-family: customFont1;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+    margin-top: 2%;
+}
+
+.UpdAttendanceBtn1:hover {
+    text-decoration: none;
+    color: #f68f28;
+}

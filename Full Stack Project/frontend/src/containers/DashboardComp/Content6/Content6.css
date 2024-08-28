@@ -1,0 +1,50 @@
+.con6_1, .con6_2 {
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "registerStudent"
+        "addStudent";
+    background-color: #ffffff;
+    margin-right: 5%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.con6_1 {
+    background-image: url('../../Images/studBack.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 200%;
+}
+
+@font-face {
+    font-family: customFont1;
+    src: url('../CSS-Fonts/Font1/ProtestStrike-Regular.ttf');
+}
+
+.registerStudent, .addStudent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.regStudBtn, .addStudBtn{
+    background-color: #FF8E6D;
+    width: 50%;
+    border-radius: 15px;
+    border: none;
+    font-family: customFont1;
+    font-size: 20px;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    font-weight: 100;
+    text-align: center;
+    color: black;
+}
+
+.regStudBtn:hover, .addStudBtn:hover{
+    text-decoration: none;
+    color: white;
+}

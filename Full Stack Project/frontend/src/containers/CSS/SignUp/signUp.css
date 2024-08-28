@@ -1,0 +1,135 @@
+.signUpPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: customFont1;
+    src: url('../../DashboardComp/CSS-Fonts/Font1/ProtestStrike-Regular.ttf');
+}
+
+.signUpContainer {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-areas:
+        "signUpContent";
+    height: 90vh;
+    border-radius: 12px;
+}
+
+.signUpContent {
+    justify-self: center;
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template-rows: 130px 400px 70px;
+    grid-template-areas:
+        "signUpHead"
+        "signUpIp"
+        "signUpLink1"
+    ;
+    backdrop-filter: blur(20px) saturate(200%);
+    border-radius: 12px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.signUpHead {
+    display: grid;
+    justify-content: center;
+    align-items: end;
+    margin-top: 5%;
+}
+
+.signUpHeadTxt1 {
+    font-family: customFont1;
+    letter-spacing: 3px;
+    font-size: 45px;
+    color: #2c2c2c;
+}
+
+.signUpHeadTxt2 {
+    font-family: customFont1;
+    letter-spacing: 3px;
+    color: rgb(82, 82, 82);
+}
+
+.signUpIp{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "signUpIp1 signUpIp2" "signUpIp3 signUpIp4" "signUpIp5 signUpIp6" "signUpBtn signUpBtn";
+}
+
+.signUpIp1, .signUpIp2, .signUpIp3, .signUpIp4, .signUpIp5, .signUpIp6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signUpName::placeholder, .signUpEmail::placeholder, .signUpPass::placeholder, .signUpRePass::placeholder, .signUpPhNum::placeholder{
+    color: rgb(0, 0, 0);
+    font-family: customFont1;
+}
+
+.signUpName, .signUpEmail, .signUpPass, .signUpRePass, .signUpPhNum{
+    width: 70%;
+    height: 50px;
+    border: solid 2px #f75c2374;
+    border-radius: 10px;
+    background: none;
+    padding: 1rem;
+    font-size: 0.9rem;
+    font-family: customFont1;
+}
+
+.signUpBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signUpBtn1 {
+    width: 20%;
+    height: 35px;
+    border: solid 2px #f75c2374;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-family: customFont1;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+.signUpBtn1:hover {
+    text-decoration: none;
+    color: #f68f28;
+}
+
+.signUpLink1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: -3%;
+}
+
+.signUpBtn2 {
+    text-decoration: none;
+    color: #f68f28;
+    font-family: customFont1;
+    letter-spacing: 2px;
+}
+
+.signUpBtn2:hover{
+    text-decoration: none;
+    color: #000000;
+}
+
+.signUpSubs{
+    font-family: customFont1;
+    font-weight: 100;
+    margin: 0 1%;
+}

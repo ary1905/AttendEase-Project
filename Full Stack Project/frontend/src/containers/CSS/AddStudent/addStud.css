@@ -1,0 +1,96 @@
+@font-face {
+    font-family: customFont1;
+    src: url('../../DashboardComp/CSS-Fonts/Font1/ProtestStrike-Regular.ttf');
+}
+
+.AddStudentMainForm{
+    display: block;   
+    margin-top: 5%;
+}
+
+.student-table {
+    background: #f5f5f5;
+    border-collapse: separate;
+    box-shadow: inset 0 1px 0 #fff;
+    font-size: 20px;
+    margin: 30px auto;
+    text-align: left;
+    width: 900px;
+    font-family: customFont1;
+    text-align: center;
+    table-layout: fixed;
+}
+
+.viewStudTh {
+    background: url(https://jackrugile.com/images/misc/noise-diagonal.png), linear-gradient(#fe5924, #fdc2b0);
+    color: #000000;
+    font-weight: 100;
+    padding: 10px 15px;
+    letter-spacing: 3px;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #e8e8e8;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.viewStudTd {
+    border-right: 1px solid #fff;
+    border-left: 1px solid #e8e8e8;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 10px 15px;
+    position: relative;
+    transition: all 300ms;
+}
+
+.viewStudTd:last-child {
+    border-right: 1px solid #e8e8e8;
+    box-shadow: inset -1px 0 0 #fff;
+}
+
+.viewStudTBody:hover td {
+    color: transparent;
+    text-shadow: 0 0 3px #aaa;
+}
+
+.viewStudTBody:hover tr:hover td {
+    color: #444;
+    text-shadow: 0 1px 0 #fff;
+    cursor: pointer;
+}
+
+.subjectSelect1{
+    width: 35%;
+    height: 50px;
+    border-radius: 10px;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: customFont1;
+    outline: solid 2px #f75c2374;
+    border: none;
+    color: rgb(0, 0, 0);
+    justify-self: center;
+    margin-left: 33%;
+}
+
+.addStudBtn1 {
+    width: 8%;
+    height: 35px;
+    border: solid 2px #f75c2374;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-family: customFont1;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 45%;
+    color: #000000;
+    text-decoration: none;
+}
+
+.addStudBtn1:hover{
+    color: #f68f28;
+    text-decoration: none;
+}

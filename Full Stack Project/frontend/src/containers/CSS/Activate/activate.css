@@ -1,0 +1,67 @@
+.activatePage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: customFont1;
+    src: url('../../DashboardComp/CSS-Fonts/Font1/ProtestStrike-Regular.ttf');
+}
+
+.activateContainer {
+    margin-top: 10%;
+    width: 40%;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-areas:
+        "activateContent";
+    height: 30vh;
+    border-radius: 12px;
+}
+
+.activateContent {
+    justify-self: center;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "activateHead"
+                         "activateBtn";
+    backdrop-filter: blur(20px) saturate(200%);
+    border-radius: 12px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.activateHead, .activateBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activateHeadText1 {
+    font-family: customFont1;
+    letter-spacing: 3px;
+    font-size: 45px;
+    color: #2c2c2c;
+}
+
+.activateBtn1 {
+    width: 50%;
+    height: 45px;
+    border: solid 2px #f75c2374;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 200;
+    font-family: customFont1;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.activateBtn1:hover {
+    text-decoration: none;
+    color: #f68f28;
+}
+

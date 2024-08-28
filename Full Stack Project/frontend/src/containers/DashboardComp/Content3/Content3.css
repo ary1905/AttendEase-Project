@@ -1,0 +1,87 @@
+.con3 {
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-right: 5%;
+    font-family: customFont1;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+@font-face {
+    font-family: customFont1;
+    src: url('../CSS-Fonts/Font1/ProtestStrike-Regular.ttf');
+}
+
+.calendarHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px 0px;
+    margin-top: -2%;
+    margin-left: 4%;
+    color: #000000;
+}
+
+
+.calBtn {
+    width: 28px;
+    height: 28px;
+    margin: 0px 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: 800;
+    border-radius: 50%;
+    background-color: #FD7B38;
+    color: #fff;
+}
+
+
+.calendar {
+    border-collapse: collapse;
+    margin: 0 auto;
+    color: #000000;
+}
+
+.calendar th,
+.calendar td {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 2px 10px;
+
+}
+
+.calendar td:hover {
+    cursor: pointer;
+    background-color: #fd7a3842;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: #fd7a3842;
+}
+
+
+.currentDay {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #FD7B38;
+    color: white;
+}
+
+.calendar-day {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,84 @@
+.Comp1Comp, .Comp2Comp, .Comp3Comp, .Comp4Comp {
+    grid-area: homeComp1;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; 
+    border-radius: 20px;
+    box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.1);
+    margin-top: -10%;
+    margin-left: 30%;
+}
+
+.Comp1Comp{
+    background-color: #FFF1E3;
+    width: 200px;
+    height: 130px;
+    grid-template-areas: "Comp1Img Comp1Head"
+        "Comp1Img Comp1Sub";   
+}
+
+.Comp2Comp{
+    background-color: #DFE7FF;
+    width: 180px;
+    height: 150px;
+    grid-template-areas: "Comp2Img Comp2Head"
+        "Comp2Img Comp2Sub";   
+}
+
+.Comp3Comp{
+    background-color: #D0F2EC;
+    width: 180px;
+    height: 150px;
+    grid-template-areas: "Comp3Img Comp3Head"
+        "Comp3Img Comp3Sub";   
+}
+
+.Comp4Comp{
+    background-color: #F2DFDE;
+    width: 200px;
+    height: 130px;
+    grid-template-areas: "Comp4Img Comp4Head"
+        "Comp4Img Comp4Sub";   
+}
+
+.Comp1Img, .Comp2Img, .Comp3Img, .Comp4Img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20%;
+}
+
+.Comp1Head, .Comp2Head, .Comp3Head, .Comp4Head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+}
+
+.Comp1Head p, .Comp2Head p, .Comp3Head p, .Comp4Head p{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+}
+
+.Comp4Head p{
+    margin-left: -10%;
+}
+
+.Comp1Sub, .Comp2Sub, .Comp5Sub, .Comp4Sub {
+    display: flex;
+    align-items: center;
+    margin-top: -20%;
+}
+
+.Comp1Sub p, .Comp2Sub p, .Comp3Sub p, .Comp4Sub p{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: gray;
+}
+
+.Comp2Sub p{
+    margin-left: -10%;
+}
+

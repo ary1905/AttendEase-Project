@@ -1,0 +1,15 @@
+.subHome {
+  display: grid;
+  grid-template-columns: 1.5fr 0.6fr;
+  grid-template-rows: 40vh 40vh;
+  grid-template-areas:
+    "con1 con3"
+    "con2 con6";
+  grid-gap: 1rem;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: #F0F0F0;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 95vh;
+}
